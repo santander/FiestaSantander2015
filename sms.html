@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Index</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script type='text/javascript' src='js/MooTools-Core-1.5.1.js'></script>
+	<script>
+	    var d = new Date();
+	    var month = d.getMonth()+1;
+	    var day = d.getDate();
+	    var minutes = d.getMinutes();
+		var hour = d.getHours();
+		if(minutes<30){hour=hour-1;};
+		var hoy = day +'/'+ month;
+		window.addEvent('load', function() {
+		window.location.hash = hoy;
+		});
+	</script>
+  </head>
+  <body>	
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="index.html">Semana Grande 2015</a>
+	    </div>
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	        <li>
+	            <li><a href="programa.html">Programa</a></li>
+	            <li class="divider"></li>
+	            <li><a href="porticada.html">Plaza Porticada</a></li>
+	            <li class="divider"></li>
+	            <li><a href="sms.html">S.M.S.</a></li>
+	        </li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+	
+	
+    <div class="container">
+
+			
+
+  			<div id="19/7"><br><br><br></div>
+			<div class="panel panel-primary">
+	  			<div class="panel-heading">
+	    			<h3 class="panel-title">Domingo 19</h3>
+	  			</div>
+	  			<div class="panel-body">
+					<p><strong>21:00 h. </strong>Plaza Ayuntamiento. NACIONAL IV.</p>
+					<p> Grupo cántabro (Versiones pop/rock en Español).</p>
+	  			</div>
+			</div>
+
+  			<div id="21/7"><br><br><br></div>
+			<div class="panel panel-primary">
+	  			<div class="panel-heading">
+	    			<h3 class="panel-title">Martes 21</h3>
+	  			</div>
+	  			<div class="panel-body">
+					<p><strong>21:00 h. </strong>Plaza de Pombo. REPION. </p>
+					<p>Grupo de rock alternativo cantado en español formado por las hermanas Iñesta y Diego García a principios del año. </p>
+	  			</div>
+			</div>
+
+  			<div id="23/7"><br><br><br></div>
+			<div class="panel panel-primary">
+	  			<div class="panel-heading">
+	    			<h3 class="panel-title">Jueves 23</h3>
+	  			</div>
+	  			<div class="panel-body">
+					<p><strong>21:00 h. </strong>Parque de Mesones (Estanque). </p>
+					<p>JAHMAL Y LOS SECUACES. (Funky/rap en Español)</p>
+	  			</div>
+			</div>
+
+  			<div id="24/7"><br><br><br></div>
+			<div class="panel panel-primary">
+	  			<div class="panel-heading">
+	    			<h3 class="panel-title">Viernes 24</h3>
+	  			</div>
+	  			<div class="panel-body">
+					<p>
+
+					</p>
+  			      <p><strong>21:00 h. </strong>Parque de Mesones (Estanque).</p>
+  			      <p> SOMEPEOPLE (Pop en Inglés)</p>
+	  			</div>
+			</div>
+
+  			<div id="25/7"><br><br><br></div>
+			<div class="panel panel-primary">
+	  			<div class="panel-heading">
+	    			<h3 class="panel-title">Sábado 25</h3>
+	  			</div>
+	  			<div class="panel-body">
+				  <p><strong>21:00 h.</strong> Plaza Juan Carlos I. 
+				  <p>DEAF DOGS (Versiones Blues/Rock en inglés)
+								</p>
+	  			</div>
+            </div>
+			
+  			<div id="26/7"><br><br><br></div>
+			<div class="panel panel-primary">
+	  			<div class="panel-heading">
+	    			<h3 class="panel-title">Domingo 26</h3>
+	  			</div>
+	  			<div class="panel-body">
+					<p><strong>21:00 h. </strong>Plaza Juan Carlos I. </p>
+					<p>SUN OF CASH (Tributo a Johny Cash/Rock en Inglés)</p>
+	  			</div>
+			</div>
+			
+			<br><br><br>
+
+	</div>
+
+	    <footer class="footer">
+	      <div class="container">
+	        <center>
+				<p class="text-muted"><img src="img/logo.png" height="30"></p>
+			</center>
+	      </div>
+	    </footer>
+	
+	    <a href="#" class="back-to-top">&nbsp;<i class="glyphicon glyphicon-arrow-up"></i>&nbsp;</a> 
+	
+	    <script src="js/jquery.min.js"></script>
+	    <script src="js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+		        jQuery(document).ready(function() {
+		            var offset = 100;
+		            var duration = 50;
+		            jQuery(window).scroll(function() {
+		                if (jQuery(this).scrollTop() > offset) {
+		                    jQuery('.back-to-top').fadeIn(duration);
+		                } else {
+		                    jQuery('.back-to-top').fadeOut(duration);
+		                }
+		            });
+		            jQuery('.back-to-top').click(function(event) {
+		                event.preventDefault();
+		                jQuery('html, body').animate({scrollTop: 0}, duration);
+		                return false;
+		            });
+		        });
+		</script>
+	  </body>
+	</html>
